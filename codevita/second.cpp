@@ -30,11 +30,11 @@ int countPossibilities(string row) {
 int main() {
     string ashokRow, anandRow;
     cin >> ashokRow >> anandRow;
-
-    if (!isValid(ashokRow) || !isValid(anandRow)) {
+ if (!isValid(ashokRow) || !isValid(anandRow)) {
         cout << "Invalid input" << endl;
         return 0;
     }
+  
 
     int ashokPossibilities = countPossibilities(ashokRow);
     int anandPossibilities = countPossibilities(anandRow);
