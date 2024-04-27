@@ -34,16 +34,16 @@ node* buildTree(node* root) {
 
 }
 
-void levelOrderTraversal(node* root) {
+void levelOrderTraversal(node* root) { //also known as bfs-bredth first search
     queue<node*> q;
     q.push(root);
     q.push(NULL);
 
     while(!q.empty()) {
-        node* temp = q.front();
+        node* temp = q.front(); 
         q.pop();
 
-        if(temp == NULL) { 
+        if(temp == NULL) {  
             //purana level complete traverse ho chuka hai
             cout << endl;
             if(!q.empty()) { 
