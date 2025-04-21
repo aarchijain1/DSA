@@ -23,5 +23,13 @@ int main(){
     //searching
     cout<<m["mera"]<<endl;
     cout<<m.at("babbar")<<endl;
+
+    // Iterating using range-based loop
+    for (auto& pair : m) {
+        cout << pair.first << " " << pair.second << endl;
+    }
+
+    cout<<m.size()<<endl; //size of map
+    cout<<m.max_size()<<endl; //max size of map 
     return 0;
 }
